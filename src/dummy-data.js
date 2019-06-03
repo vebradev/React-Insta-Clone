@@ -5,7 +5,7 @@ const dummyData = [
     thumbnailUrl:
       "https://instagram.fvno2-1.fna.fbcdn.net/vp/31240a4078464f9cfbbaef5f43f2b67d/5D9E97EE/t51.2885-19/s150x150/58616651_426348868149083_1403916751980199936_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
     imageUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/7d927afbf52944c6167ae5cc669631b2/5D93D7D5/t51.2885-15/e35/22344103_687526951445971_5123786758814695424_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://www.instagram.com/p/Bk8ovzcHuIj/media?size=l",
     likes: 400,
     timestamp: "July 17th 2017, 12:42:40 pm",
     comments: [
@@ -33,7 +33,7 @@ const dummyData = [
     thumbnailUrl:
       "https://instagram.fvno2-1.fna.fbcdn.net/vp/35740a8b0152d4515195d32fa47910d6/5D7894FF/t51.2885-19/s150x150/55855668_2252041385056713_483088820418379776_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
     imageUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/e6e43325c1ad620b6a42b6817b165d53/5D7DD4B6/t51.2885-15/e35/18512816_1354649161301112_4821693512426717184_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://www.instagram.com/p/BhBwMG1F2nc/media?size=l",
     likes: 4307,
     timestamp: "July 15th 2017, 03:12:09 pm",
     comments: [
@@ -70,7 +70,7 @@ const dummyData = [
     thumbnailUrl:
       "https://instagram.fvno2-1.fna.fbcdn.net/vp/dfde46bf897f2c99225ad1a9b0a15c05/5D9BFDA7/t51.2885-19/s150x150/13398400_140638743023210_310840336_a.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
     imageUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/46e06264594722229d42b2f97b45bf06/5D8B9800/t51.2885-15/e35/14705094_1817884375113192_471357860278697984_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://www.instagram.com/p/BfELWwbFUCk/media?size=l",
     likes: 5306,
     timestamp: "July 14th 2017, 10:04:08 am",
     comments: [
