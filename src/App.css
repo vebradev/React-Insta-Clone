@@ -53,6 +53,42 @@ body {
   background-color: #fafafa;
 }
 
+.search-bar-container {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
+  height: 77px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 60px 0;
+}
+
+.logos {
+  display: flex;
+  align-items: start;
+}
+
+.logos div {
+  background-color: #262626;
+  height: 28px;
+  margin: 0 16px;
+  width: 1px;
+}
+
+.instagram-logo {
+  width: 103px;
+}
+
+.search-bar input {
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  text-align: center;
+  border-radius: 3px;
+  color: #999;
+  font-size: 14px;
+  padding: 7px;
+}
+
 .post {
   display: block;
   width: 614px;
@@ -63,6 +99,8 @@ body {
 }
 
 .post .header {
+  display: flex;
+  align-items: center;
   height: 28px;
   padding: 16px;
 }
