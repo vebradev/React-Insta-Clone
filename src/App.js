@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import dummyData from './dummy-data';
 import PostContainer from './components/PostContainer/PostContainer';
 import './App.css';
+import SearchBarContainer from './components/SearchBar/SearchBarContainer';
 
 class App extends React.Component {
   constructor() {
@@ -15,6 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <SearchBarContainer />
         <PostContainer posts={this.state.posts} />
       </div>
     );
