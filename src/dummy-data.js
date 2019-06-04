@@ -3,9 +3,9 @@ const dummyData = [
     id: "a",
     username: "vbrrr",
     thumbnailUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/31240a4078464f9cfbbaef5f43f2b67d/5D9E97EE/t51.2885-19/s150x150/58616651_426348868149083_1403916751980199936_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://tk-assets.lambdaschool.com/ecd33d34-c124-4b75-92d2-e5c52c171ed8_11201517_887808411287357_1307163552_a.jpg",
     imageUrl:
-      "https://www.instagram.com/p/Bk8ovzcHuIj/media?size=l",
+      "https://tk-assets.lambdaschool.com/69cf901b-f96d-466e-a745-ff2a01effac9_philz-image.jpg",
     likes: 400,
     timestamp: "July 17th 2017, 12:42:40 pm",
     comments: [
@@ -31,9 +31,9 @@ const dummyData = [
     id: "b",
     username: "twitch",
     thumbnailUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/35740a8b0152d4515195d32fa47910d6/5D7894FF/t51.2885-19/s150x150/55855668_2252041385056713_483088820418379776_n.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://tk-assets.lambdaschool.com/ce601fdf-7cb0-4098-83d3-1a1584a72513_30841289_342445456281079_112845064497004544_n.jpg",
     imageUrl:
-      "https://www.instagram.com/p/BhBwMG1F2nc/media?size=l",
+      "https://tk-assets.lambdaschool.com/89d13918-b7a2-4b40-9658-f376ea3f6b59_37131538_213683546146400_1083714364399157248_n.jpg",
     likes: 4307,
     timestamp: "July 15th 2017, 03:12:09 pm",
     comments: [
@@ -68,9 +68,9 @@ const dummyData = [
     id: "c",
     username: "playhearthstone",
     thumbnailUrl:
-      "https://instagram.fvno2-1.fna.fbcdn.net/vp/dfde46bf897f2c99225ad1a9b0a15c05/5D9BFDA7/t51.2885-19/s150x150/13398400_140638743023210_310840336_a.jpg?_nc_ht=instagram.fvno2-1.fna.fbcdn.net",
+      "https://tk-assets.lambdaschool.com/c432f179-8bd7-4758-959d-d88a21f96bca_37105899_432228420518610_5035444036064772096_n.jpg",
     imageUrl:
-      "https://www.instagram.com/p/BfELWwbFUCk/media?size=l",
+      "https://tk-assets.lambdaschool.com/43bf01f9-319c-469d-8cf5-0120fe1007f1_yosemite.jpg",
     likes: 5306,
     timestamp: "July 14th 2017, 10:04:08 am",
     comments: [
