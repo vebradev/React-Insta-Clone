@@ -16,6 +16,7 @@ class Post extends React.Component {
   hitLike = () => {
     const likes = this.state.likes + 1;
     this.setState({ likes });
+    console.log(this.props.post.timestamp);
   }
 
   render() {
@@ -36,7 +37,10 @@ class Post extends React.Component {
           {this.state.likes} likes
         </div>
         <div className="comments">
-          <CommentSection comments={this.props.post.comments} />
+          <CommentSection 
+            comments={this.props.post.comments} 
+            timestamp={this.props.post.timestamp} 
+          />
         </div>
       </div>
     );
