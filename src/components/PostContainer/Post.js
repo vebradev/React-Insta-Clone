@@ -11,6 +11,9 @@ const Post = props => {
       <div className="content">
         <img src={props.post.imageUrl} alt="" />
       </div>
+      <div className="likes">
+        {props.post.likes} likes
+      </div>
       <div className="comments">
           <CommentSection comments={props.post.comments}/>
       </div>
