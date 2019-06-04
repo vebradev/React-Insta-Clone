@@ -1,5 +1,6 @@
 import React from "react";
 import uuid from "uuid";
+import moment from "moment";
 import PropTypes from "prop-types";
 
 class CommentSection extends React.Component {
@@ -16,6 +17,7 @@ class CommentSection extends React.Component {
 
   changeHandler = e => {
     this.setState({ newComment: e.target.value });
+    console.log(this.props.timestamp);
   };
 
   addNewComment = e => {
@@ -39,6 +41,11 @@ class CommentSection extends React.Component {
             {comment.text}
           </span>
         ))}
+
+        <div className="timestamp">
+          {moment(this.props.timestamp, "MMMM Do YYYY, h:mm:ss a").fromNow()}
+        </div>
+
         <form className="add-comment" onSubmit={this.addNewComment}>
           <input
             placeholder="Add a comment..."
