@@ -10,6 +10,7 @@ const PostsContainer = props => {
           post={post} 
           comments={post.comments} 
           likes={post.likes}
+          timestamp={post.timestamp}
         />
       ))}
     </div>
