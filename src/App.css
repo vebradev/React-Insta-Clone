@@ -220,6 +220,13 @@ span.username {
   font-weight: bold;
 }
 
+.post .timestamp {
+  padding: 5px 16px;
+  font-size: 0.65rem;
+  color: #444444;
+  text-transform: uppercase;
+}
+
 .content img {
   max-width: 614px;
 }
