@@ -3,59 +3,142 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* INSTA APP */
 
 body {
+  font-size: 10px;
   background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
 }
 
 .search-bar-container {
   background-color: #ffffff;
-  border-bottom: 1px solid rgba(0,0,0,.0975);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
   height: 77px;
   display: flex;
   justify-content: space-evenly;
@@ -65,7 +148,7 @@ body {
 
 .logos {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .logos div {
@@ -85,7 +168,7 @@ body {
   text-align: center;
   border-radius: 3px;
   color: #999;
-  font-size: 14px;
+  font-size: 0.9rem;
   padding: 7px;
 }
 
@@ -106,18 +189,22 @@ body {
 }
 
 span.username {
+  font-size: 1rem;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .post .header img {
   border-radius: 200px;
   max-width: 32px;
   margin-right: 16px;
+  border: 1px solid #dbdbdb;
 }
 
-.content {
-
+.post .likes {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .content img {
@@ -127,9 +214,25 @@ span.username {
 .comments {
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
 }
 
 .comments > span {
-  margin: 0 0 4px 0;
+  margin: 0 0 7px 0;
+  padding: 0 16px;
+  font-size: 1rem;
+}
+
+.comments .add-comment {
+  padding: 0 16px;
+  margin: 10px 0 0 0;
+  border-top: 1px solid #dbdbdb;
+}
+
+.add-comment input {
+  width: 100%;
+  padding: 16px 0;
+  border: 0;
+  outline: 0;
+  font-size: 0.9rem;
+  color: #000;
 }
