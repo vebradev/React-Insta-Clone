@@ -24,7 +24,7 @@ class CommentSection extends React.Component {
     this.setState({
       comments: this.state.comments.concat({
         id: uuid(),
-        username: "root",
+        username: localStorage.getItem('user'),
         text: this.state.newComment
       }),
       newComment: ""
