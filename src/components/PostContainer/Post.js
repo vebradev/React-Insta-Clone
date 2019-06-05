@@ -1,7 +1,7 @@
 import React from "react";
 import CommentSection from "../CommentSection/CommentSection";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faComment } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faComment } from '@fortawesome/free-regular-svg-icons';
 
 class Post extends React.Component {
   constructor(props) {
@@ -16,7 +16,6 @@ class Post extends React.Component {
   hitLike = () => {
     const likes = this.state.likes + 1;
     this.setState({ likes });
-    console.log(this.props.post.timestamp);
   }
 
   render() {
@@ -30,7 +29,7 @@ class Post extends React.Component {
           <img src={this.props.post.imageUrl} alt="" />
         </div>
         <div className="controls">
-          <FontAwesomeIcon icon={faHeart} onClick={this.hitLike}/>
+          <FontAwesomeIcon icon={faHeart} onClick={this.hitLike} />
           <FontAwesomeIcon icon={faComment} />
         </div>
         <div className="likes">
