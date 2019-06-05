@@ -172,6 +172,22 @@ body {
   padding: 7px;
 }
 
+.search-bar-controls {
+  font-size: 24px;
+}
+
+.search-bar-controls svg {
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: #999999;
+  transition: all 0.2s;
+}
+
+.search-bar-controls svg:hover {
+  color: #000000;
+}
+
 .post {
   display: block;
   width: 614px;
@@ -206,11 +222,11 @@ span.username {
   font-size: 1.5rem;
 }
 
-.fa-heart {
+.post .fa-heart {
   margin-right: 20px;
 }
 
-.fa-heart, .fa-comment {
+.post .fa-heart, .post .fa-comment {
   cursor: pointer;
 }
 
@@ -223,7 +239,7 @@ span.username {
 .post .timestamp {
   padding: 5px 16px;
   font-size: 0.65rem;
-  color: #444444;
+  color: #777777;
   text-transform: uppercase;
 }
 
@@ -255,4 +271,52 @@ span.username {
   outline: 0;
   font-size: 0.9rem;
   color: #000;
+}
+
+.loginForm {
+  width: 270px;
+  margin: 100px auto 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  color: #262626;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.loginForm img {
+  max-width: 175px;
+  margin: 0 auto 20px auto;
+}
+
+.loginForm input {
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  text-align: center;
+  border-radius: 3px;
+  color: #212121;
+  font-size: 0.8rem;
+  padding: 7px;
+  margin: 3px 0;
+  outline: none;
+}
+
+.loginForm button {
+  padding: 7px;
+  margin: 10px 0 0 0;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.loginForm button:hover {
+  background-color: rgb(37, 131, 219);
+}
+
+.loginForm button:active {
+  background-color: rgb(88, 164, 235);
 }
