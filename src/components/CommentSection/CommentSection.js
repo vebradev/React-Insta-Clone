@@ -17,7 +17,6 @@ class CommentSection extends React.Component {
 
   changeHandler = e => {
     this.setState({ newComment: e.target.value });
-    console.log(this.props.timestamp);
   };
 
   addNewComment = e => {
