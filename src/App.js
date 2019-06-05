@@ -1,4 +1,5 @@
 import React from "react";
+import withAuth from "./components/Authenticate/withAuthenticate";
 import PostsPage from "./components/PostContainer/PostsPage";
 import "./App.css";
 
@@ -11,10 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <PostsPage />
+        <ComponentFromWithAuth />
       </div>
     );
   }
 }
+
+const ComponentFromWithAuth = withAuth(PostsPage);
 
 export default App;
