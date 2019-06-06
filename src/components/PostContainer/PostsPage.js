@@ -8,11 +8,9 @@ class PostsPage extends React.Component {
     super();
     this.state = {
       posts: [],
-      searchQuery: '',
       searchResults: ''
     };
 
-    this.searchHandler = this.searchHandler.bind(this);
   }
 
   componentDidMount() {
@@ -20,15 +18,23 @@ class PostsPage extends React.Component {
   }
 
   searchHandler = e => {
-    this.setState({ searchQuery: e.target.value });
+    const results = this.state.posts.filter(post => {
+      if (post.username.includes(e.target.value)) {
+        console.log(post);
+        return post;
+      } else {
+        return null;
+      }
+    });
+    this.setState({ searchResults: results })
   };
 
   render() {
     return (
-      <div className="insta">
-        <SearchBarContainer search={this.searchHandler} value={this.state.searchQuery} />
-        <PostContainer posts={this.state.posts} />
-      </div>
+      <>
+        <SearchBarContainer searchResults={this.searchHandler} />
+        <PostContainer posts={this.state.searchResults !== '' ? this.state.searchResults : this.state.posts} />
+      </>
     );
   }
 }

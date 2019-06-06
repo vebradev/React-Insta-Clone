@@ -40,9 +40,10 @@ const Header = styled.div`
     border: solid 1px #dbdbdb;
     text-align: center;
     border-radius: 3px;
-    color: #999;
+    color: #212121;
     font-size: 0.9rem;
     padding: 7px;
+    outline: none;
   }
 
   .search-bar-controls {
@@ -73,8 +74,7 @@ const SearchBarContainer = props => {
 
       <div className="search-bar">
         <input
-          onChange={props.searchHandler}
-          value={props.searchQuery}
+          onChange={props.searchResults}
           placeholder="Search"
         />
       </div>
