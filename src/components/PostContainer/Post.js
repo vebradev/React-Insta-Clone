@@ -18,7 +18,7 @@ const StyledPost = styled.div`
     height: 28px;
     padding: 16px;
 
-    span.username {
+    .username {
       font-size: 1rem;
       font-weight: bold;
       margin-right: 5px;
@@ -30,6 +30,10 @@ const StyledPost = styled.div`
       margin-right: 16px;
       border: 1px solid #dbdbdb;
     }
+  }
+
+  .content img {
+    max-width: 614px;
   }
 
   .controls {

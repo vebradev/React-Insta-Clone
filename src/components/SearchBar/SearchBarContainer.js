@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../../assets/inLogo.png";
-import Camera from "../../assets/camera.png";
+import Branding from "./Branding";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCompass,
@@ -18,22 +17,6 @@ const Header = styled.div`
 
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
-
-  .logos {
-    display: flex;
-    align-items: flex-start;
-
-    .instagram-logo {
-      width: 103px;
-    }
-
-    .separator {
-      background-color: #262626;
-      height: 28px;
-      margin: 0 16px;
-      width: 1px;
-    }
-  }
 
   .search-bar input {
     background: #fafafa;
@@ -66,11 +49,7 @@ const Header = styled.div`
 const SearchBarContainer = props => {
   return (
     <Header className="search-bar-container">
-      <div className="logos">
-        <img className="camera-icon" src={Camera} alt="Camera icon" />
-        <div className="separator" />
-        <img className="instagram-logo" src={Logo} alt="Instagram Clone Logo" />
-      </div>
+      <Branding />
 
       <div className="search-bar">
         <input

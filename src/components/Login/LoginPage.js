@@ -76,7 +76,7 @@ class LoginPage extends React.Component {
   render() {
     return (
       <>
-        <StyledLoginForm className="loginForm">
+        <StyledLoginForm>
           <img src={Logo} alt="Instagram Clone Logo" />
           <input
             placeholder="Username"
