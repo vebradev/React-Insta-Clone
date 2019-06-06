@@ -1,7 +1,40 @@
 import React from "react";
+import styled from "styled-components";
 import uuid from "uuid";
 import moment from "moment";
 import PropTypes from "prop-types";
+
+const StyledComments = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    margin: 0 0 7px 0;
+    padding: 0 16px;
+    font-size: 1rem;
+
+    .username {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  }
+
+  .add-comment {
+    padding: 0 16px;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #dbdbdb;
+
+    input {
+      width: 100%;
+      padding: 16px 0;
+      border: 0;
+      outline: 0;
+      font-size: 0.9rem;
+      color: #000;
+    }
+  }
+`;
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -24,7 +57,7 @@ class CommentSection extends React.Component {
     this.setState({
       comments: this.state.comments.concat({
         id: uuid(),
-        username: localStorage.getItem('user'),
+        username: localStorage.getItem("user"),
         text: this.state.newComment
       }),
       newComment: ""
@@ -33,7 +66,7 @@ class CommentSection extends React.Component {
 
   render() {
     return (
-      <>
+      <StyledComments>
         {this.state.comments.map(comment => (
           <span key={comment.id}>
             <span className="username">{comment.username}</span>
@@ -52,7 +85,7 @@ class CommentSection extends React.Component {
             value={this.state.newComment}
           />
         </form>
-      </>
+      </StyledComments>
     );
   }
 }
