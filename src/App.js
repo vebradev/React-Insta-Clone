@@ -1,12 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import dummyData from './dummy-data';
-import './App.css';
+import React from "react";
+import withAuth from "./components/Authenticate/withAuthenticate";
+import PostsPage from "./components/PostContainer/PostsPage";
+import "./App.css";
 
-function App() {
-  return (
-    <div>hello, insta</div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div>
+        <ComponentFromWithAuth />
+      </div>
+    );
+  }
 }
+
+const ComponentFromWithAuth = withAuth(PostsPage);
 
 export default App;
